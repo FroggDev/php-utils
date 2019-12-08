@@ -1,0 +1,25 @@
+{
+    "name": "froggdev/php-utils",
+    "description": "Some usefull functions for PHP.",
+		"keywords": ["php", "utils", "util", "function", "frogg"],
+		"license": "MIT",
+    "authors": [
+        {
+            "name": "Marsiglietti Remy",
+            "email": "admin@frogg.fr"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.3",
+    },
+    "autoload": {
+        "psr-4": {
+            "froggdev\\PhpUtils\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.0-dev"
+        }
+    }
+}
