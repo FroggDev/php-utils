@@ -19,7 +19,7 @@ Abstract class FileUtil
       foreach ($files as $file) {
         $path = "$dir/$file";
         // if it is a file delete it, else call recursively deletree
-        (is_dir($path)) ? $this->delTree($path) : @unlink($path);
+        (is_dir($path)) ? self::delTree($path) : @unlink($path);
       }
     }
 
