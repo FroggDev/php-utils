@@ -11,6 +11,10 @@ Abstract class FileUtil
    */
   public static function delTree(string $dir,bool $delMainDir=true): bool
   {
+    // Check if $dir is a dir and
+    // Prevent empty $dir to delete all files for root
+    if(!is_dir($dir)) return false;
+    
     // get folder content ignoring . and ..
     $files = @array_diff(@scandir($dir), array('.', '..'));
 
