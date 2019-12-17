@@ -1,8 +1,13 @@
 <?php
 namespace froggdev\PhpUtils;
 
-Abstract class FileUtil
+final class FileUtil
 {
+	/**
+	 * Prevent class to be instanciated
+	 */
+	private function __construct() {}
+	
   /**
    * Delete a folder and its content, can remove only a folder content if $delMainDir is set to false
    *

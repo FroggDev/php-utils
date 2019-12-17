@@ -1,8 +1,13 @@
 <?php
 namespace froggdev\PhpUtils;
 
-Abstract Class StringUtil
+final Class StringUtil
 {
+	/**
+	 * Prevent class to be instanciated
+	 */
+	private function __construct() {}
+	
   /**
    * Split a string and ignore empty
    *

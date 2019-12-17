@@ -1,8 +1,13 @@
 <?php
 namespace froggdev\PhpUtils;
 
-Abstract class MathUtil
+final class MathUtil
 {	
+	/**
+	 * Prevent class to be instanciated
+	 */
+	private function __construct() {}
+	
   /**
    * Get the factoriel of a number_format
    *

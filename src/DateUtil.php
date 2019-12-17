@@ -1,8 +1,13 @@
 <?php
 namespace froggdev\PhpUtils;
 
-Abstract class DateUtil
+final class DateUtil
 {
+	/**
+	 * Prevent class to be instanciated
+	 */
+	private function __construct() {}
+	
   /**
    * 
    * @param int $numOfMonth
